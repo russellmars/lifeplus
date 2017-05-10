@@ -4,8 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
+import * as filters from '@/filters'
 
 Vue.config.productionTip = false
+
+// 注册过滤器
+Object.keys(filters).forEach(name => {
+  Vue.filter(name, filters[name])
+})
 
 FastClick.attach(document.body)
 
