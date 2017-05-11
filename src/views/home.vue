@@ -50,12 +50,12 @@
     .logo-wrapper {
       top: 32.2vh;
       .logo {
-        width: 113px
+        // width: 113px
       }
 
       .sub-logo {
         margin-top: 4vh;
-        width: 124px
+        // width: 124px
       }
     }
 
