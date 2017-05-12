@@ -17,7 +17,7 @@
         <img src="../assets/home/nav-about.png" alt="">-->
         <div v-for="(item, index) in nav"
           @click="$router.push(item.link)"
-          class="nav-item right-align bold f12">
+          class="nav-item right-align bold f12 pointer">
           <div class="caps" :class="[!item.active ? 'blue' : 'gray']">{{ index | indexHandle }}</div>
           <div class="caps f14" :class="[item.active ? 'blue' : 'gray']">{{ item.enName }}</div>
           <div class="caps" :class="[item.active ? 'blue' : 'gray']">{{ item.name }}</div>
