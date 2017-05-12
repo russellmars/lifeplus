@@ -1,22 +1,18 @@
+@import "./var.less";
+
 html, body {
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 
-.family-yahei {
-  font-family: "Microsoft YaHei";
-}
+.family-yahei { font-family: "Microsoft YaHei"; }
+.family-yahei { font-family: "Arial"; }
 
-.family-yahei {
-  font-family: "Arial";
-}
+.f12 { font-size: 12px; }
+.f14 { font-size: 14px; }
+.f18 { font-size: 18px; }
+.f26 { font-size: 26px; }
 
-.f12 {
-  font-size: 12px;
-}
-
-.f14 {
-  font-size: 14px;
-}
+.letter-spacing { letter-spacing: .2em; }
 
 .position-center {
   left: 50%;
@@ -27,3 +23,8 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.white { color: #fff }
+.blue { color: @color-blue-1; }
+.gray { color: @color-grey-1; }
+.gray-2 { color: @color-grey-2; }

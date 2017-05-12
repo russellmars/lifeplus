@@ -3,15 +3,18 @@ export default {
     {
       name: '首页',
       enName: 'LIFE+',
-      active: true
+      active: true,
+      link: '/'
     }, {
       name: '内容',
       enName: 'CONTENT',
-      active: false
+      active: false,
+      link: '/content'
     }, {
       name: '关于',
       enName: 'ABOUT',
-      active: false
+      active: false,
+      link: '/about'
     }
   ]
 }

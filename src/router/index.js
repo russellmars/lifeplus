@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/views/home'
-import tag from '@/views/tag'
-import life from '@/views/life'
+import content from '@/views/content'
+import about from '@/views/about'
 
 Vue.use(Router)
 
@@ -12,11 +12,11 @@ export default new Router({
       path: '/',
       component: home
     }, {
-      path: '/tags/:tag',
-      component: tag
+      path: '/content',
+      component: content
     }, {
-      path: '/tags/:tag/:life',
-      component: life
+      path: '/about',
+      component: about
     }
   ]
 })

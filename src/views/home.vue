@@ -15,7 +15,9 @@
         <!--<img src="../assets/home/nav-home.png" alt="">
         <img src="../assets/home/nav-content.png" alt="">
         <img src="../assets/home/nav-about.png" alt="">-->
-        <div v-for="(item, index) in nav" class="nav-item right-align bold f12">
+        <div v-for="(item, index) in nav"
+          @click="$router.push(item.link)"
+          class="nav-item right-align bold f12">
           <div class="caps" :class="[!item.active ? 'blue' : 'gray']">{{ index | indexHandle }}</div>
           <div class="caps f14" :class="[item.active ? 'blue' : 'gray']">{{ item.enName }}</div>
           <div class="caps" :class="[item.active ? 'blue' : 'gray']">{{ item.name }}</div>
@@ -25,14 +27,7 @@
   </div>
 </template>
 <style lang="less" scoped>
-  @color-blue-1: blue;
-  @color-grey-1: gray;
-  .blue {
-    color: @color-blue-1;
-  }
-  .gray {
-    color: @color-grey-1
-  }
+  @import "../style/var.less";
   .root {
     margin: 2.6vh 2.9vw;
     box-sizing: border-box;
