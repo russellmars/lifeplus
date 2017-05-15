@@ -30,35 +30,51 @@ export default {
     name: '衣架',
     enName: 'HANGERS',
     items: [{
-      pic: 'static/img/content/6.gif',
+      pic: 'static/img/content/6.jpg',
+      gif: 'static/img/content/6.gif',
+      hover: false,
       name: '锅盖支架',
       enName: 'The pot holder'
     }, {
       pic: 'static/img/content/7.png',
+      gif: 'static/img/content/7.png',
+      hover: false,
       name: '餐具支架',
       enName: 'Tableware bracket'
     }, {
-      pic: 'static/img/content/8.gif',
+      pic: 'static/img/content/8.jpg',
+      gif: 'static/img/content/8.gif',
+      hover: false,
       name: '挂书支架',
       enName: 'Hanging book stand'
     }, {
-      pic: 'static/img/content/9.gif',
+      pic: 'static/img/content/9.jpg',
+      gif: 'static/img/content/9.gif',
+      hover: false,
       name: '枕头晾挂架',
       enName: 'The pot holder'
     }, {
-      pic: 'static/img/content/10.gif',
+      pic: 'static/img/content/10.jpg',
+      gif: 'static/img/content/10.gif',
+      hover: false,
       name: '皮带支架',
       enName: 'Belt stent'
     }, {
-      pic: 'static/img/content/11.gif',
+      pic: 'static/img/content/11.jpg',
+      gif: 'static/img/content/11.gif',
+      hover: false,
       name: '挂鞋晾挂架',
       enName: 'GuaXie hang frame'
     }, {
-      pic: 'static/img/content/12.gif',
+      pic: 'static/img/content/12.jpg',
+      gif: 'static/img/content/12.gif',
+      hover: false,
       name: '盆栽支架',
       enName: 'Potted stents'
     }, {
-      pic: 'static/img/content/13.png',
+      pic: 'static/img/content/13.jpg',
+      gif: 'static/img/content/13.gif',
+      hover: false,
       name: '牙刷支架',
       enName: 'Toothbrush holder'
     }]
@@ -67,47 +83,69 @@ export default {
     name: '瓶子',
     enName: 'BOTTLE',
     items: [{
-      pic: 'static/img/content/14.gif',
+      pic: 'static/img/content/14.jpg',
+      gif: 'static/img/content/14.gif',
+      hover: false,
       name: '一次性杯套',
       enName: 'Disposable cup set'
     }, {
-      pic: 'static/img/content/15.gif',
+      pic: 'static/img/content/15.jpg',
+      gif: 'static/img/content/15.gif',
+      hover: false,
       name: '蜡烛台',
       enName: 'Candle holders'
     }, {
-      pic: 'static/img/content/16.gif',
+      pic: 'static/img/content/16.jpg',
+      gif: 'static/img/content/16.gif',
+      hover: false,
       name: '排插保护壳',
       enName: 'Platooninsert protection shell'
     }, {
-      pic: 'static/img/content/17.gif',
+      pic: 'static/img/content/17.jpg',
+      gif: 'static/img/content/17.gif',
+      hover: false,
       name: '瓶嘴挤压瓶',
       enName: 'The pot holder'
     }, {
-      pic: 'static/img/content/18.gif',
+      pic: 'static/img/content/18.jpg',
+      gif: 'static/img/content/18.gif',
+      hover: false,
       name: '酱料瓶',
       enName: 'Sauce bottles'
     }, {
-      pic: 'static/img/content/19.gif',
+      pic: 'static/img/content/19.jpg',
+      gif: 'static/img/content/19.gif',
+      hover: false,
       name: '水杯',
       enName: 'Water glass'
     }, {
-      pic: 'static/img/content/20.gif',
+      pic: 'static/img/content/20.jpg',
+      gif: 'static/img/content/20.gif',
+      hover: false,
       name: '杯子保护套',
       enName: 'The glass case'
     }, {
-      pic: 'static/img/content/21.gif',
+      pic: 'static/img/content/21.jpg',
+      gif: 'static/img/content/21.gif',
+      hover: false,
       name: '防潮盖',
       enName: 'The pot holder'
     }, {
-      pic: 'static/img/content/22.gif',
+      pic: 'static/img/content/22.jpg',
+      gif: 'static/img/content/22.gif',
+      hover: false,
       name: '吸蛋器',
       enName: 'Absorbers egg'
     }, {
       pic: 'static/img/content/23.png',
+      gif: 'static/img/content/23.gif',
+      hover: false,
       name: '花盆',
       enName: 'A flower pot'
     }, {
-      pic: 'static/img/content/24.gif',
+      pic: 'static/img/content/24.jpg',
+      gif: 'static/img/content/24.gif',
+      hover: false,
       name: '油漆罐',
       enName: 'Paint cans'
     }]
@@ -116,27 +154,39 @@ export default {
     name: '其他',
     enName: 'OTHER',
     items: [{
-      pic: 'static/img/content/25.gif',
+      pic: 'static/img/content/25.jpg',
+      gif: 'static/img/content/25.gif',
+      hover: false,
       name: '电脑支架',
       enName: 'Computer support'
     }, {
-      pic: 'static/img/content/26.gif',
+      pic: 'static/img/content/26.jpg',
+      gif: 'static/img/content/26.gif',
+      hover: false,
       name: 'ipad支架',
       enName: 'ipad stents'
     }, {
       pic: 'static/img/content/27.png',
+      gif: 'static/img/content/27.gif',
+      hover: false,
       name: '手机支架',
       enName: 'Mobile phone stents'
     }, {
-      pic: 'static/img/content/28.gif',
+      pic: 'static/img/content/28.jpg',
+      gif: 'static/img/content/28.gif',
+      hover: false,
       name: '防滑衣架',
       enName: 'Non-slip hanger'
     }, {
-      pic: 'static/img/content/29.png',
+      pic: 'static/img/content/29.jpg',
+      gif: 'static/img/content/29.gif',
+      hover: false,
       name: '挤牙膏',
       enName: 'toothpaste'
     }, {
-      pic: 'static/img/content/30.gif',
+      pic: 'static/img/content/30.jpg',
+      gif: 'static/img/content/30.gif',
+      hover: false,
       name: '塑料袋收纳',
       enName: 'Plastic bags to receive'
     }]
