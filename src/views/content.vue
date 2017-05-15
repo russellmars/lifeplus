@@ -58,7 +58,7 @@
       min-width: 600px;
       height: 400px;
       padding: 0 10%;
-
+      margin: 0 auto;
       header {
         margin-top: 10px;
         .nav {

@@ -42,7 +42,7 @@
       max-width: 1200px;
       min-width: 600px;
       padding: 0 10%;
-
+      margin: 0 auto;
       header {
         margin-top: 10px;
         .nav {
