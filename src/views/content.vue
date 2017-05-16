@@ -212,14 +212,20 @@
         )
       },
       checkDetail (item, group) {
-        this.currentItem = item
-        this.currentGroup = group
-        const animation = this.getRandomAnimation()
-        console.log(animation)
-        this.vodalOptions.animation = animation
-        setTimeout(() => {
-          this.showVodal = true
-        }, 100)
+        // this.currentItem = item
+        // this.currentGroup = group
+        // const animation = this.getRandomAnimation()
+        // this.vodalOptions.animation = animation
+        // setTimeout(() => {
+        //   this.showVodal = true
+        // }, 100)
+        this.$router.push({
+          name: 'detail',
+          params: {
+            group: group.enName,
+            name: item.name
+          }
+        })
       },
       mouseleaveItem (item) {
         item.hover = false
