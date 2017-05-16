@@ -27,13 +27,14 @@
       </div>
     </div>
     <footer class="relative">
-      <img class="fit" :src="bottom.pic" alt="">
+      <img class="absolute" :src="bottom.pic" alt="">
       <a class="desc absolute white f12" :href="bottom.desc">{{ bottom.desc }}</a>
     </footer>
   </div>
 </template>
 
 <style lang="less" scoped>
+  @import "../style/var.less";
   .root {
     margin: 0 auto;
     .container {
@@ -86,14 +87,21 @@
       }
     }
     footer {
+      background: @color-blue-1;
+      height: 100px;
+      max-width: 1200px;
+      padding: 0 10%;
+      margin: 0 auto;
       margin-top: 160px;
-      .desc {
-        right: 15%;
+      img {
         top: 50%;
+        left: 10%;
         transform: translateY(-50%);
-        a {
-          text-decoration: none;
-        }
+      }
+      a {
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
       }
     }
   }

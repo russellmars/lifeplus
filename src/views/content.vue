@@ -53,9 +53,9 @@
         </div>
       </div>
     </div>
-    <footer>
-      <img :src="logo" alt="">
-      <div></div>
+    <footer class="relative">
+      <img class="absolute" :src="bottom.pic" alt="">
+      <a class="desc absolute white f12" :href="bottom.desc">{{ bottom.desc }}</a>
     </footer>
     <vodal class="vodal" :animation="vodalOptions.animation"
       :show="showVodal" :height="vodalOptions.height" :width="vodalOptions.width"
@@ -172,6 +172,17 @@
       max-width: 1200px;
       padding: 0 10%;
       margin: 0 auto;
+      margin-top: 160px;
+      img {
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+      }
+      a {
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+      }
     }
 
     .vodal {

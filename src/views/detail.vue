@@ -3,7 +3,7 @@
     <template v-if="group && item">
       <div @click="$router.go(-1)" class="back-btn absolute f18 blue letter-spacing pointer">{{ '< ' + group.enName }}</div>
       <div class="titles absolute">
-        <div class="main-title gray f26 letter-spacing">{{ group.name + '－' + item.name }}</div>
+        <div class="main-title gray f26 letter-spacing bold">{{ group.name + '－' + item.name }}</div>
         <div class="gray-2 f14 letter-spacing">{{ group.enName + ' - ' + item.enName }}</div>
       </div>
       <div class="pics absolute">
@@ -40,8 +40,8 @@
     }
     .pics {
       top: 50vh;
-      left: 0;
-      margin: 0 8%;
+      left: 11vw;
+      right: 11vw;
       .item {
         padding: 0 3.5vw;
         padding-bottom: 4vh;

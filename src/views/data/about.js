@@ -6,7 +6,7 @@ export default {
     enText: 'Light up your life with your hands'
   },
   bottom: {
-    pic: 'static/img/about/4.png',
+    pic: 'static/img/logo-white.png',
     desc: 'https://russellmars.github.io/lifeplus/#/'
   },
   nav: [
