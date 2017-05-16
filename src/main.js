@@ -5,8 +5,11 @@ import App from './App'
 import router from './router'
 import FastClick from 'fastclick'
 import * as filters from '@/filters'
+import Vodal from 'vodal'
 
 Vue.config.productionTip = false
+
+Vue.component(Vodal.name, Vodal)
 
 // 注册过滤器
 Object.keys(filters).forEach(name => {

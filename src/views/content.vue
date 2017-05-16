@@ -22,7 +22,7 @@
             <div class="gray-2 f26 bold caps">{{ subTitle.text }}</div>
             <div class="gray f14 bold letter-spacing">{{ subTitle.enText }}</div>
           </div>
-          <div class="group-icons flex justify-between gray clearfix bold">
+          <div class="group-icons flex justify-between gray clearfix bold overflow-hidden">
             <div class="group-icon center col col-4 pointer" v-for="group in groups" @click="scrollTargetGroup(group)">
               <img class="fit" :src="group.pic" alt="">
               <div class="letter-spacing">
@@ -32,11 +32,11 @@
             </div>
           </div>
           <div class="groups gray">
-            <div class="group clearfix" v-for="group in groups" :id="'group_' + group.enName">
+            <div class="group clearfix overflow-hidden" v-for="group in groups" :id="'group_' + group.enName">
               <div class="group-en-name f18 blue bold">{{ group.enName }}</div>
               <div class="item col col-6 sm-col-4 md-col-3 center pointer"
                 v-for="item in group.items"
-                @click="checkDetail(item)"
+                @click="checkDetail(item, group)"
                 @mouseleave="mouseleaveItem(item)"
                 @mouseenter="mouseenterItem(item)">
                 <div class="item-wrapper relative">
@@ -46,7 +46,6 @@
                     <div class="name f12 line-height-4">{{ item.name }}</div>
                     <div class="en-name f8 line-height-4">{{ item.enName }}</div>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -54,6 +53,29 @@
         </div>
       </div>
     </div>
+    <footer>
+      <img :src="logo" alt="">
+      <div></div>
+    </footer>
+    <vodal class="vodal" :animation="vodalOptions.animation"
+      :show="showVodal" :height="vodalOptions.height" :width="vodalOptions.width"
+      @hide="showVodal = false">
+      <template v-if="currentItem && currentGroup">
+        <div>
+          <div class="gray f18 line-height-4">{{ currentGroup.name + ' - ' + currentItem.name }}</div>
+          <div class="gray-2 f10 line-height-4">{{ currentGroup.enName + ' - ' + currentItem.enName }}</div>
+        </div>
+        <div class="current-item clearfix" v-if="currentItem">
+          <div class="col col-12 sm-col-4" v-for="li in currentItem.list">
+            <img class="fit" :src="li.pic" alt="">
+            <div class="center f10">
+              <div class="line-height-4 gray">{{ li.name }}</div>
+              <div class="gray-2">{{ li.enName }}</div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </vodal>
   </div>
 </template>
 
@@ -63,7 +85,6 @@
     margin: 0 auto;
     .container {
       max-width: 1200px;
-      height: 400px;
       padding: 0 10%;
       margin: 0 auto;
       header {
@@ -145,6 +166,20 @@
 
       }
     }
+    footer {
+      background: @color-blue-1;
+      height: 100px;
+      max-width: 1200px;
+      padding: 0 10%;
+      margin: 0 auto;
+    }
+
+    .vodal {
+      .current-item {
+        padding: 0 45px;
+      }
+    }
+
   }
 </style>
 
@@ -152,9 +187,21 @@
 <script>
   import contentData from './data/content'
   import Velocity from 'velocity-animate'
+  const animations = [
+    'zoom', 'fade', 'flip', 'door', 'rotate', 'slideUp', 'slideDown', 'slideLeft', 'slideRight'
+  ]
   export default {
     data () {
-      return contentData
+      return Object.assign({}, contentData, {
+        showVodal: false,
+        currentItem: null,
+        currentGroup: null,
+        vodalOptions: {
+          width: 400,
+          height: 240,
+          animation: 'rotate'
+        }
+      })
     },
     methods: {
       scrollTargetGroup (group) {
@@ -164,14 +211,34 @@
           { duration: 1000 }
         )
       },
-      checkDetail (item) {
-        console.log('checkDetail', item)
+      checkDetail (item, group) {
+        this.currentItem = item
+        this.currentGroup = group
+        const animation = this.getRandomAnimation()
+        console.log(animation)
+        this.vodalOptions.animation = animation
+        setTimeout(() => {
+          this.showVodal = true
+        }, 100)
       },
       mouseleaveItem (item) {
         item.hover = false
       },
       mouseenterItem (item) {
         item.hover = true
+      },
+      getRandomAnimation () {
+        return animations[Math.floor(Math.random() * animations.length)]
+      }
+    },
+    mounted () {
+      const clientWidth = document.body.clientWidth
+      if (clientWidth < 640) {
+        this.vodalOptions.width = 260
+        this.vodalOptions.height = 510
+      } else {
+        this.vodalOptions.width = 640
+        this.vodalOptions.height = 240
       }
     }
   }

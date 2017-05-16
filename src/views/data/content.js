@@ -34,7 +34,22 @@ export default {
       gif: 'static/img/content/6.gif',
       hover: false,
       name: '锅盖支架',
-      enName: 'The pot holder'
+      enName: 'The pot holder',
+      list: [
+        {
+          pic: 'static/img/content/6-d-1.gif',
+          name: '打开',
+          enName: 'Open'
+        }, {
+          pic: 'static/img/content/6-d-2.gif',
+          name: '变形',
+          enName: 'Deformation'
+        }, {
+          pic: 'static/img/content/6-d-3.gif',
+          name: '展示',
+          enName: 'show'
+        }
+      ]
     }, {
       pic: 'static/img/content/7.png',
       gif: 'static/img/content/7.png',
@@ -46,7 +61,22 @@ export default {
       gif: 'static/img/content/8.gif',
       hover: false,
       name: '挂书支架',
-      enName: 'Hanging book stand'
+      enName: 'Hanging book stand',
+      list: [
+        {
+          pic: 'static/img/content/8-d-1.gif',
+          name: '折叠',
+          enName: 'Folding'
+        }, {
+          pic: 'static/img/content/8-d-2.gif',
+          name: '变形',
+          enName: 'Deformation'
+        }, {
+          pic: 'static/img/content/8-d-3.gif',
+          name: '展示',
+          enName: 'show'
+        }
+      ]
     }, {
       pic: 'static/img/content/9.jpg',
       gif: 'static/img/content/9.gif',

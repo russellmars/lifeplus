@@ -28,9 +28,7 @@
     </div>
     <footer class="relative">
       <img class="fit" :src="bottom.pic" alt="">
-      <div class="desc absolute white f12">
-        <a class="desc absolute white f12" :href="bottom.desc">{{ bottom.desc }}</a>
-      </div>
+      <a class="desc absolute white f12" :href="bottom.desc">{{ bottom.desc }}</a>
     </footer>
   </div>
 </template>
