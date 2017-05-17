@@ -198,10 +198,26 @@
 <script>
   import contentData from './data/content'
   import Velocity from 'velocity-animate'
+  import Vue from 'vue'
   const animations = [
     'zoom', 'fade', 'flip', 'door', 'rotate', 'slideUp', 'slideDown', 'slideLeft', 'slideRight'
   ]
   export default {
+    beforeRouteEnter (to, from, next) {
+      next(vm => {
+        if (from.name === 'detail') {
+          Vue.nextTick(() => {
+            document.body.scrollTop = global.contentPageScrollTopValue || 0
+          })
+        }
+      })
+    },
+    beforeRouteLeave (to, from, next) {
+      if (to.name === 'detail') {
+        global.contentPageScrollTopValue = document.body.scrollTop
+      }
+      next()
+    },
     data () {
       return Object.assign({}, contentData, {
         showVodal: false,

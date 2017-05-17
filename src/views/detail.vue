@@ -8,7 +8,7 @@
       </div>
       <div class="pics absolute">
         <div>
-          <div class="item col col-4 relative" v-for="(li, index) in item.list">
+          <div class="item col relative" :style="getItemStyle(item.list.length)" :class="getGridClass(item.list.length)" v-for="(li, index) in item.list">
             <div class="border-line-left absolute" v-if="index === 0"></div>
             <div class="border-line-right absolute"></div>
             <img class="fit" :src="li.pic" alt="">
@@ -77,12 +77,56 @@
         group: null
       }
     },
+    methods: {
+      getGridClass (itemLength) {
+        let clz = 'col-12'
+        switch (itemLength) {
+          case 1:
+            clz = 'col-12'
+            break
+          case 2:
+            clz = 'col-6'
+            break
+          case 3:
+            clz = 'col-4'
+            break
+          case 4:
+            clz = 'col-3'
+            break
+          default:
+            clz = 'col-12'
+            break
+        }
+        return [clz]
+      },
+      getItemStyle (itemLength) {
+        let padding = '20'
+        switch (itemLength) {
+          case 1:
+            padding = '20'
+            break
+          case 2:
+            padding = '6'
+            break
+          case 3:
+            padding = '3.5'
+            break
+          case 4:
+            padding = '2'
+            break
+          default:
+            padding = '20'
+            break
+        }
+        return {
+          paddingLeft: padding + 'vw',
+          paddingRight: padding + 'vw'
+        }
+      }
+    },
     mounted () {
       const groupEnName = this.$route.params.group
       const itemName = this.$route.params.name
-      console.log(groupEnName)
-      console.log(itemName)
-      console.log(contentData.groups)
       this.group = find(contentData.groups, group => {
         return group.enName === groupEnName
       })
