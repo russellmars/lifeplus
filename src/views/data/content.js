@@ -49,7 +49,7 @@ export default {
         enName: 'show'
       }]
     }, {
-      pic: 'static/img/content/7.png',
+      pic: 'static/img/content/7.jpg',
       gif: 'static/img/content/7.gif',
       hover: false,
       name: '餐具支架',
@@ -224,7 +224,7 @@ export default {
         name: '拼合',
         enName: 'split'
       }, {
-        pic: 'static/img/content/15-d-3.gif',
+        pic: 'static/img/content/15-d-3.png',
         name: '展示',
         enName: 'show'
       }]
@@ -403,7 +403,7 @@ export default {
         name: '拼合',
         enName: 'split'
       }, {
-        pic: 'static/img/content/24-d-3.gif',
+        pic: 'static/img/content/24-d-3.png',
         name: '展示',
         enName: 'show'
       }]
