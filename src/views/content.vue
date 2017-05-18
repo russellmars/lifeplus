@@ -119,9 +119,9 @@
             padding: 0 10px;
             .group-icon {
               padding: 40px 10px 20px 10px;
-              border-left: 1px solid @color-grey-2;
+              border-left: 2px solid rgb(211, 211, 211);
               &:last-of-type {
-                border-right: 1px solid @color-grey-2;
+                border-right: 2px solid rgb(211, 211, 211);
               }
 
               .name {
