@@ -71,8 +71,8 @@ export default {
       pic: 'static/img/content/8.jpg',
       gif: 'static/img/content/8.gif',
       hover: false,
-      name: '挂书支架',
-      enName: 'Hanging book stand',
+      name: '书架',
+      enName: 'Bookshelf',
       list: [{
         pic: 'static/img/content/8-d-1.gif',
         name: '折叠',
@@ -128,8 +128,8 @@ export default {
       pic: 'static/img/content/11.jpg',
       gif: 'static/img/content/11.gif',
       hover: false,
-      name: '挂鞋晾挂架',
-      enName: 'GuaXie hang frame',
+      name: '鞋子晾挂架',
+      enName: 'Shoes hang frame',
       list: [{
         pic: 'static/img/content/11-d-1.gif',
         name: '裁剪',
@@ -213,8 +213,8 @@ export default {
       pic: 'static/img/content/15.jpg',
       gif: 'static/img/content/15.gif',
       hover: false,
-      name: '蜡烛台',
-      enName: 'Candle holders',
+      name: '烛台',
+      enName: 'Candlestick',
       list: [{
         pic: 'static/img/content/15-d-1.gif',
         name: '裁剪',
@@ -458,8 +458,8 @@ export default {
       pic: 'static/img/content/27.jpg',
       gif: 'static/img/content/27.gif',
       hover: false,
-      name: '手机支架',
-      enName: 'Mobile phone stents',
+      name: '手机音响',
+      enName: 'Mobile phone stereo',
       list: [{
         pic: 'static/img/content/27-d-1.gif',
         name: '裁剪',

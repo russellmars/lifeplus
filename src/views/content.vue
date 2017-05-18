@@ -141,7 +141,7 @@
           }
           .groups {
             .group {
-              margin-top: 100px;
+              margin-top: 200px;
               .group-en-name {
                 margin-bottom: 30px;
                 padding-left: 8%;
