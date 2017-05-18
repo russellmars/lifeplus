@@ -55,7 +55,7 @@
     </div>
     <footer class="relative">
       <img class="absolute" :src="bottom.pic" alt="">
-      <a class="desc absolute white f12" :href="bottom.desc">{{ bottom.desc }}</a>
+      <a class="desc absolute white f12 text-decoration-none" :href="bottom.desc">{{ bottom.desc }}</a>
     </footer>
     <vodal class="vodal" :animation="vodalOptions.animation"
       :show="showVodal" :height="vodalOptions.height" :width="vodalOptions.width"

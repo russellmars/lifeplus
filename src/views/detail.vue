@@ -1,7 +1,7 @@
 <template>
   <div class="root absolute top-0 left-0 right-0 bottom-0">
     <template v-if="group && item">
-      <div @click="$router.go(-1)" class="back-btn absolute f18 blue letter-spacing pointer">{{ '< ' + group.enName }}</div>
+      <div @click="$router.go(-1)" class="back-btn absolute f18 blue letter-spacing bold pointer">{{ '< ' + group.enName }}</div>
       <div class="titles absolute">
         <div class="main-title gray f26 letter-spacing bold">{{ group.name + '－' + item.name }}</div>
         <div class="gray-2 f14 letter-spacing">{{ group.enName + ' - ' + item.enName }}</div>
