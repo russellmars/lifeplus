@@ -243,7 +243,7 @@ export default {
         name: '拼合',
         enName: 'split'
       }, {
-        pic: 'static/img/content/16-d-3.png',
+        pic: 'static/img/content/16-d-3.gif',
         name: '展示',
         enName: 'show'
       }]
