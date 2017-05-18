@@ -169,7 +169,6 @@
     footer {
       background: @color-blue-1;
       height: 100px;
-      max-width: 1200px;
       padding: 0 10%;
       margin: 0 auto;
       margin-top: 160px;

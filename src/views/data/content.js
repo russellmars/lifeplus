@@ -431,7 +431,7 @@ export default {
         name: '拼合',
         enName: 'split'
       }, {
-        pic: 'static/img/content/25-d-3.gif',
+        pic: 'static/img/content/25-d-4.gif',
         name: '展示',
         enName: 'show'
       }]
@@ -526,7 +526,7 @@ export default {
         name: '曲卷',
         enName: 'curly'
       }, {
-        pic: 'static/img/content/30-d-3.gif',
+        pic: 'static/img/content/30-d-4.gif',
         name: '展示',
         enName: 'show'
       }]

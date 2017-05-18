@@ -7,9 +7,9 @@
         <div class="logo">
           <img class="fit" src="../assets/home/logo.png" alt="">
         </div>
-        <div class="sub-logo">
+        <!--<div class="sub-logo">
           <img class="fit" src="../assets/home/sub-logo.png" alt="">
-        </div>
+        </div>-->
       </div>
       <div class="navs absolute position-center flex justify-center">
         <!--<img src="../assets/home/nav-home.png" alt="">
@@ -45,7 +45,7 @@
     .logo-wrapper {
       top: 32.2vh;
       .logo {
-        // width: 113px
+        width: 15vw;
       }
 
       .sub-logo {

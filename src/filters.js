@@ -4,7 +4,7 @@ export const indexHandle = (index) => {
   }
   const fixIndex = Math.floor(index)
   if (fixIndex < 10 && fixIndex >= 0) {
-    return '0' + fixIndex
+    return '0' + (fixIndex + 1)
   }
   return '' + fixIndex
 }
