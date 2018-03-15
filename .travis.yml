@@ -13,10 +13,10 @@ install:
 before_script:
 
 script:
-  - hexo generate
+  - npm run build
 
 after_script:
-  - cd public
+  - cd docs
   - git init
   - git config user.name "russellmars"
   - git config user.email "russellmars@sina.com"
