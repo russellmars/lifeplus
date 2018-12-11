@@ -15,19 +15,31 @@ before_script:
 script:
   - npm run build
 
-after_script:
-  - cd docs
-  - git init
-  - git config user.name "russellmars"
-  - git config user.email "russellmars@sina.com"
-  - git add .
-  - git commit -m "update site"
-  - git push --force --quiet "https://${account}:${password}@${GH_REF}" master:gh-pages
+deploy:
+  local-dir: docs
+  email: russellmars@sina.com
+  name: russellmars
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: false
+  target-branch: gh_pages
+  on:
+    branch: master
+
+# after_script:
+#   - cd docs
+#   - git init
+#   - git config user.name "russellmars"
+#   - git config user.email "russellmars@sina.com"
+#   - git add .
+#   - git commit -m "update site"
+#   - git push --force --quiet "https://${account}:${password}@${GH_REF}" master:gh-pages
 # E: Build LifeCycle
 
-branches:
-  only:
-    - master
-env:
- global:
-   - GH_REF: github.com/russellmars/lifeplus.git
+# branches:
+#   only:
+#     - master
+# env:
+#  global:
+#    - GH_REF: github.com/russellmars/lifeplus.git
